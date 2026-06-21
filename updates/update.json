@@ -1,1 +1,19 @@
 
+{
+"appName": "WC Live TV",
+"packageName": "com.yourcompany.wclivetv",
+"versionCode": 12,
+"versionName": "1.2.0",
+"minimumSupportedVersion": 10,
+"forceUpdate": false,
+"updateAvailable": true,
+"releaseDate": "2026-06-21",
+"apkSizeMB": 18.5,
+"apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/releases/download/v1.2.0/wc-live-v1.2.0.apk",
+"releaseNotes": [
+"Improved channel loading speed",
+"Fixed buffering issues",
+"Updated M3U sources",
+"UI performance improvements"
+]
+}
