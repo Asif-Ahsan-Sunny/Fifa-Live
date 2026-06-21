@@ -86,5 +86,6 @@ http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/1949446.ts
 http://starhub.pro/live/farhat-3379/67897-913379/745269.ts
 
 
-
+#EXTINF:-1 group-title="News" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV 🇧🇩
+http://114.130.57.224:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
 
