@@ -1,7 +1,7 @@
 {
   "appName": "WC Live",
   "packageName": "com.wclive.tv",
-  "versionCode": 12,
+  "versionCode": 13,
   "versionName": "1.6.7",
   "minimumSupportedVersion": 1,
   "forceUpdate": false,
@@ -10,10 +10,12 @@
   "apkSizeMB": 7.0,
   "apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/blob/main/updates/wc-live-v1.6.7.apk",
   "releaseNotes": [
+    "Full D-pad navigation inside About and Update dialogs on Android TV",
+    "D-pad Down scrolls release notes, then moves to Update Now button",
+    "D-pad Up from buttons scrolls back to notes area",
     "Fixed About dialog Close button not responding on Android TV remotes",
-    "Fixed D-pad escaping About/Update/Download dialogs to background channel rows",
-    "Added NUMPAD_ENTER support for all TV modal dialogs",
-    "Fixed Android TV launcher banner stretching (logo now displays in correct 16:9 proportions)",
+    "Fixed D-pad escaping all modal dialogs to background channel rows",
+    "Fixed Android TV launcher banner stretching",
     "Update check now delayed to 30 seconds for slower TV devices"
   ]
 }

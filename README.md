@@ -134,10 +134,12 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 
 ### v1.6.7 — 2026-06-23
 - **Fixed Android TV startup freeze** — update popup no longer appears behind channel rows or steals focus from the remote
-- **Fixed About dialog Close button not responding** — D-pad center/enter now reliably closes the About dialog on all TV remotes (including NUMPAD_ENTER)
-- **Fixed D-pad escaping modal dialogs** — About, Update, and Download dialogs now trap all D-pad navigation inside the modal; no more accidental focus on background channel rows
+- **Full D-pad navigation inside About and Update dialogs** — D-pad Down scrolls release notes/About text, then moves to action buttons; D-pad Up from buttons returns focus to content area; subtle visual highlight shows which area is active
+- **Fixed About dialog Close button** — Close is now reachable by pressing D-pad Down to the bottom of the content, then OK/select
+- **Fixed D-pad escaping modal dialogs** — About, Update, and Download dialogs trap all D-pad navigation; no accidental focus on background channel rows
 - **Fixed Android TV launcher banner stretching** — logo now displays in correct 16:9 proportions on the TV home screen
 - Update check delayed to 30 seconds after launch for slower TV devices
+- Added NUMPAD_ENTER support for all TV modal dialogs
 - Fixed D-pad focus lost after background channel sync completes while update dialog is visible
 - Fixed back button behavior for forced updates (shows toast instead of silently doing nothing)
 - Optimized availability checker concurrency for slower TV processors (2 threads on TV, 3 on phone)
