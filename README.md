@@ -85,10 +85,7 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 
 1. Go to **Settings → My Fire TV → Developer Options** and enable **Apps from Unknown Sources**
 2. Install the [**Downloader**](https://www.amazon.com/dp/B01N0BP507) app from the Amazon store
-3. Open Downloader and enter:
-   ```
-   https://github.com/Asif-Ahsan-Sunny/wc-live/releases/latest/download/wc-live.apk
-   ```
+3. Open Downloader, go to the [**Releases page**](https://github.com/Asif-Ahsan-Sunny/wc-live/releases/latest) on a phone/PC, copy the `.apk` link, and paste it into Downloader
 4. Download and install — done
 
 > **Subsequent updates are automatic.** Once installed, WC Live checks for new versions at launch and can update itself without repeating this process.
