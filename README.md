@@ -135,6 +135,11 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 
 ## 📋 Changelog
 
+### v1.6.7 — 2026-06-23
+- Increased sidebar divider opacity to 45% for clear TV viewing distance visibility
+- Added 2dp top margin to divider for cleaner visual breathing room
+- **Force update** — all existing installs will be prompted to update
+
 ### v1.6.6 — 2026-06-23
 - Increased sidebar divider opacity for better visual separation
 
