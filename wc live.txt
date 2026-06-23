@@ -2,7 +2,7 @@
 
 # ─────────── Fifa Live──────────
 
-#EXTINF:-1 group-title="Fifa Live" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 🇧🇩
+#EXTINF:-1 group-title="Fifa Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4c/T_Sports_logo.svg", T Sports 🇧🇩
 http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/130714.ts
 
 #EXTINF:-1 group-title="Fifa Live" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports HD B 🇧🇩
