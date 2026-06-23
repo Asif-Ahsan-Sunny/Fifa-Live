@@ -1,16 +1,18 @@
 {
   "appName": "WC Live",
   "packageName": "com.wclive.tv",
-  "versionCode": 10,
+  "versionCode": 11,
   "versionName": "1.6.7",
   "minimumSupportedVersion": 1,
-  "forceUpdate": true,
+  "forceUpdate": false,
   "updateAvailable": true,
   "releaseDate": "2026-06-23",
   "apkSizeMB": 6.9,
   "apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/blob/main/updates/wc-live-v1.6.7.apk",
   "releaseNotes": [
-    "Improved sidebar divider visibility between channel categories and static actions",
-    "Cleaner visual separation for easier TV navigation"
+    "Improved Android TV startup responsiveness",
+    "Fixed update popup layering and remote focus issue",
+    "Optimized background channel sync and status checking on slower TV devices",
+    "Improved update dialog behavior on Android TV"
   ]
 }

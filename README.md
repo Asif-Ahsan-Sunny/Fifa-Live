@@ -133,9 +133,12 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 ## 📋 Changelog
 
 ### v1.6.7 — 2026-06-23
-- Increased sidebar divider opacity to 45% for clear TV viewing distance visibility
-- Added 2dp top margin to divider for cleaner visual breathing room
-- **Force update** — all existing installs will be prompted to update
+- **Fixed Android TV startup freeze** — update popup no longer appears behind channel rows or steals focus from the remote
+- Fixed D-pad focus lost after background channel sync completes while update dialog is visible
+- Fixed back button behavior for forced updates (shows toast instead of silently doing nothing)
+- Optimized availability checker concurrency for slower TV processors (2 threads on TV, 3 on phone)
+- Deferred background channel sync, update check, and availability checker to after first UI render
+- Suppressed background UI refreshes while any modal dialog is visible
 
 ### v1.6.6 — 2026-06-23
 - Increased sidebar divider opacity for better visual separation
