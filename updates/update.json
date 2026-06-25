@@ -1,21 +1,18 @@
 {
   "appName": "WC Live",
   "packageName": "com.wclive.tv",
-  "versionCode": 13,
-  "versionName": "1.6.7",
+  "versionCode": 14,
+  "versionName": "1.6.8",
   "minimumSupportedVersion": 1,
   "forceUpdate": true,
   "updateAvailable": true,
-  "releaseDate": "2026-06-23",
-  "apkSizeMB": 7.0,
-  "apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/blob/main/updates/wc-live-v1.6.7.apk",
+  "releaseDate": "2026-06-25",
+  "apkSizeMB": 2.23,
+  "apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/blob/main/updates/wc-live-v1.6.8.apk",
   "releaseNotes": [
-    "Full D-pad navigation inside About and Update dialogs on Android TV",
-    "D-pad Down scrolls release notes, then moves to Update Now button",
-    "D-pad Up from buttons scrolls back to notes area",
-    "Fixed About dialog Close button not responding on Android TV remotes",
-    "Fixed D-pad escaping all modal dialogs to background channel rows",
-    "Fixed Android TV launcher banner stretching",
-    "Update check now delayed to 30 seconds for slower TV devices"
+    "Important update — please install to keep receiving future updates",
+    "Smaller, more efficient app package",
+    "Improved app update reliability",
+    "Minor stability improvements"
   ]
 }
