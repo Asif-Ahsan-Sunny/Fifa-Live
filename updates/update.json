@@ -4,7 +4,7 @@
   "versionCode": 13,
   "versionName": "1.6.7",
   "minimumSupportedVersion": 1,
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateAvailable": true,
   "releaseDate": "2026-06-23",
   "apkSizeMB": 7.0,
