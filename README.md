@@ -22,7 +22,7 @@
 
 <br/>
 
-[**⬇ Download APK**](https://github.com/Asif-Ahsan-Sunny/wc-live/releases/latest) &nbsp;&nbsp;·&nbsp;&nbsp; [Channel Lineup](#-channel-lineup) &nbsp;&nbsp;·&nbsp;&nbsp; [Installation](#-installation) &nbsp;&nbsp;·&nbsp;&nbsp; [Changelog](#-changelog)
+[**⬇ Download APK**](https://github.com/Asif-Ahsan-Sunny/wc-live/releases/latest) &nbsp;&nbsp;·&nbsp;&nbsp; [Installation](#-installation) &nbsp;&nbsp;·&nbsp;&nbsp; [Changelog](#-changelog)
 
 <br/>
 
@@ -71,7 +71,7 @@ Full immersive mode, D-pad navigation, large touch targets. No login, no account
 HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available.
 
 **🪶 Lightweight**
-~7 MB APK. No background services, no analytics, no ads.
+A couple MB. No background services, no analytics, no ads.
 
 </td>
 </tr>
@@ -97,25 +97,6 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 
 ---
 
-## 📡 Channel Lineup
-
-| Category | Channels |
-|---|---|
-| ⚽ **Fifa Live** | T Sports, Bein Sports 1 Max, D Sports, TSN 1–5 (USA & Canada), Win Sports, DAZN Direct, TVP Sports, Fussball TV |
-| 🏏 **Sports** | Star Sports 1 HD, Sky Sports, Euro Sport HD, Cricbuzz HD, Cricket Gold, Flash Guys HD, Fighters |
-| 📺 **Bangla** | BTV, NTV, Channel 24, Jamuna TV, Maasranga, Deepto TV, Ekattor HD, Boishakhi, Bangla Vision, News 24, ATN News + more |
-| 📰 **News** | Al Jazeera, CNN (US), DW English, NDTV English & Hindi, France 24, RT News, TRT World, Ekattor HD, Independent TV |
-| 🎬 **Movies** | HBO, Goldmines, Sheemaroo Bollywood, Action Hollywood, Cineedge HD, Hindi Movies, True Stories, BBC Earth Films |
-| 🎵 **Music** | 9XM TV, YRF Music HD, Music Mastii, Party Universe, Deewana HD |
-| 👶 **Kids** | Tom & Jerry, Doraemon, Mr Bean Animated, PBS Kids, Oggy & the Cockroaches, Motu Patlu, Gopal Bhar |
-| 🕌 **Religious** | Al Quran, Peace TV Bangla & Urdu, Saudi Quran, Saudi Sunnah, Madani TV, EWTN, Live Quran TV |
-| 🎭 **Entertainment** | HUM TV, SRK TV, Colors Infinity, Fashion One, Motor Vision, Luxel HD, Delicious |
-| 🌍 **Documentary** | Discovery Bangla & Hindi, BBC Earth, Animal Planet, Wild Earth, Travel XP, Real Wild |
-
-> Channel availability depends on stream uptime. The green status dot next to each channel reflects its current state.
-
----
-
 ## 🔧 Tech Stack
 
 | | |
@@ -123,37 +104,31 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 | **Language** | Java (Android) |
 | **Min SDK** | 21 — Android 5.0 Lollipop |
 | **Target SDK** | 34 — Android 14 |
-| **Player** | [Media3 ExoPlayer](https://github.com/androidx/media) 1.3.1 |
-| **Architecture** | Single-activity · Programmatic UI · No ViewBinding · No RecyclerView |
-| **Networking** | Plain `HttpURLConnection` — no third-party HTTP clients |
-| **Package** | `com.wclive.tv` |
+| **Player** | Media3 ExoPlayer |
 
 ---
 
 ## 📋 Changelog
 
+### v1.6.8 — 2026-06-25
+- Smaller, more efficient app package
+- Improved app update reliability
+- Minor stability improvements
+
 ### v1.6.7 — 2026-06-23
-- **Fixed Android TV startup freeze** — update popup no longer appears behind channel rows or steals focus from the remote
-- **Full D-pad navigation inside About and Update dialogs** — D-pad Down scrolls release notes/About text, then moves to action buttons; D-pad Up from buttons returns focus to content area; subtle visual highlight shows which area is active
-- **Fixed About dialog Close button** — Close is now reachable by pressing D-pad Down to the bottom of the content, then OK/select
-- **Fixed D-pad escaping modal dialogs** — About, Update, and Download dialogs trap all D-pad navigation; no accidental focus on background channel rows
-- **Fixed Android TV launcher banner stretching** — logo now displays in correct 16:9 proportions on the TV home screen
-- Update check delayed to 30 seconds after launch for slower TV devices
-- Added NUMPAD_ENTER support for all TV modal dialogs
-- Fixed D-pad focus lost after background channel sync completes while update dialog is visible
-- Fixed back button behavior for forced updates (shows toast instead of silently doing nothing)
-- Optimized availability checker concurrency for slower TV processors (2 threads on TV, 3 on phone)
-- Deferred background channel sync, update check, and availability checker to after first UI render
-- Suppressed background UI refreshes while any modal dialog is visible
+- Fixed an Android TV startup freeze affecting some devices
+- Full remote D-pad navigation inside the About and Update screens
+- Fixed the About screen's Close button not responding on some TV remotes
+- Fixed remote navigation occasionally landing on the wrong item behind a dialog
+- Fixed the Android TV launcher logo appearing stretched
+- Smoother update check timing for slower TV devices
 
 ### v1.6.6 — 2026-06-23
-- Increased sidebar divider opacity for better visual separation
+- Visual polish to the sidebar
 
 ### v1.6.5 — 2026-06-23
-- Renamed app package to `com.wclive.tv`
-- Removed *Reload Defaults* from settings sidebar
-- Added **in-app APK update system** with optional and forced update dialogs
-- Added **live channel availability checker** — green dots show online streams in real time
+- Added **in-app updates** — no manual sideloading needed after the first install
+- Added **live channel status indicators** — see which channels are online at a glance
 
 ### v1.6 — 2026-06-21
 - Fixed round launcher icon rendering on Android 8+
@@ -163,18 +138,6 @@ HLS & MPEG-TS hardware-accelerated playback. Supports 4K streams where available
 
 ### v1.5 & v1.4
 - Initial stable releases
-
----
-
-## 📁 Repository Structure
-
-```
-wc-live/
-├── wc live.txt          # M3U channel playlist (edit here to add/remove channels)
-└── updates/
-    ├── update.json      # Version manifest read by the app for update checks
-    └── *.apk            # APK releases
-```
 
 ---
 
