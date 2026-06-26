@@ -47,7 +47,7 @@ Works on **Android TV**, **Amazon Fire Stick**, **tablets**, and **phones**.
 <td width="50%">
 
 **📺 Live Channel Catalogue**
-100+ channels across 10 categories. Playlist is hosted remotely and refreshes automatically every hour.
+100+ channels across 10 categories. Playlist is hosted remotely and refreshes automatically.
 
 **🟢 Channel Status Indicators**
 Real-time green dots show which streams are online right now. Checked in the background every 45 minutes.
@@ -76,6 +76,15 @@ A couple MB. No background services, no analytics, no ads.
 </td>
 </tr>
 </table>
+
+---
+
+## 🌐 Web Version
+
+WC Live also has a browser-based player — same channel lineup, same Midnight Cinema design, no app install needed.
+Built with React + HLS.js on the frontend and a Node.js/Express backend that proxies streams and keeps all real stream URLs off the browser entirely.
+
+Available for self-hosting — see the `Web-Project/` folder in the development repository.
 
 ---
 

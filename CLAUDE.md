@@ -1,6 +1,10 @@
 # WC Live — AI Project Guide
 
-This file is the authoritative reference for any AI session working on this project.
+> **AI starting a new session:** The **private repository** (`wc-live-private`) contains
+> the master `CLAUDE.md` and `CLAUDE_SESSION_LOG.md` for the full project (Android + Web).
+> Start there if you have access. This file covers the **Android app only**.
+
+This file is the authoritative reference for any AI session working on the Android app.
 Read it fully before making any changes. It covers architecture, build rules, release workflow, design system, and known pitfalls.
 
 ---
