@@ -1,10 +1,6 @@
 # WC Live — AI Project Guide
 
-> **AI starting a new session:** The **private repository** (`wc-live-private`) contains
-> the master `CLAUDE.md` and `CLAUDE_SESSION_LOG.md` for the full project (Android + Web).
-> Start there if you have access. This file covers the **Android app only**.
-
-This file is the authoritative reference for any AI session working on the Android app.
+This file is the authoritative reference for any AI session working on this project.
 Read it fully before making any changes. It covers architecture, build rules, release workflow, design system, and known pitfalls.
 
 ---
@@ -30,7 +26,7 @@ Read it fully before making any changes. It covers architecture, build rules, re
 ## 2. File Structure (what matters)
 
 ```
-android-tv-apk/
+WC-Live/
 ├── CLAUDE.md                        ← this file (read first)
 ├── CLAUDE_SESSION_LOG.md            ← version history and session notes
 ├── BUILD_INSTRUCTIONS.md            ← Gradle build commands
@@ -74,9 +70,9 @@ android-tv-apk/
 
 | versionName | versionCode | Date |
 |---|---|---|
-| 1.6.7 | 11 | 2026-06-23 |
+| 1.6.9 | 15 | 2026-06-25 |
 
-**Next version will be:** versionCode 12, versionName TBD by user.
+**Next version will be:** versionCode 16, versionName TBD by user.
 
 **Never:**
 - Use the same versionCode twice
@@ -91,7 +87,7 @@ android-tv-apk/
 ### Standard debug build
 
 ```bash
-cd /Users/abc/Desktop/android-tv-apk
+cd ~/Documents/Projects/WC-Live
 ./gradlew assembleDebug
 ```
 
@@ -131,7 +127,7 @@ This file is read by the app on startup to check for updates. The local copy liv
   "updateAvailable": true,
   "releaseDate": "YYYY-MM-DD",
   "apkSizeMB": 6.9,
-  "apkUrl": "https://github.com/Asif-Ahsan-Sunny/wc-live/blob/main/updates/wc-live-v1.7.0.apk",
+  "apkUrl": "https://raw.githubusercontent.com/Asif-Ahsan-Sunny/wc-live-private/main/wc-live-apk/wc-live-v1.7.0.apk",
   "releaseNotes": [
     "What changed in this version",
     "Another change"
@@ -164,8 +160,8 @@ cd /tmp/wc-live
 git pull
 
 # 2. Copy the new APK and update.json into the clone
-cp "/Users/abc/Desktop/android-tv-apk/updates/wc-live-vX.X.X.apk" updates/
-cp "/Users/abc/Desktop/android-tv-apk/updates/update.json" updates/
+cp "~/Documents/Projects/WC-Live/updates/wc-live-vX.X.X.apk" updates/
+cp "~/Documents/Projects/WC-Live/updates/update.json" updates/
 
 # 3. Update the README changelog (see README section below)
 # Edit /tmp/wc-live/README.md — add the new version under "## 📋 Changelog"
@@ -180,7 +176,7 @@ git push
 gh release delete vX.X.X --repo Asif-Ahsan-Sunny/wc-live --yes
 
 gh release create vX.X.X \
-  "/Users/abc/Desktop/android-tv-apk/updates/wc-live-vX.X.X.apk#wc-live.apk" \
+  "~/Documents/Projects/WC-Live/updates/wc-live-vX.X.X.apk#wc-live.apk" \
   --repo Asif-Ahsan-Sunny/wc-live \
   --title "WC Live vX.X.X — Brief Title" \
   --notes "$(cat <<'EOF'
