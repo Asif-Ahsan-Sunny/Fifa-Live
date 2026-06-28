@@ -119,6 +119,12 @@ Available for self-hosting — see the `Web-Project/` folder in the development 
 
 ## 📋 Changelog
 
+### v1.6.9 — 2026-06-29
+- Smaller app package — removed an unused library, reducing APK size from ~2.2 MB to ~1.9 MB
+- Bounded memory usage — channel logo cache is now capped so memory stays predictable on low-RAM devices
+- Faster channel switching — selecting a channel no longer triggers a full list rebuild
+- Build hardening — release build cleanup and Play Protect compatibility audit
+
 ### v1.6.8 — 2026-06-25
 - Smaller, more efficient app package
 - Improved app update reliability
