@@ -138,6 +138,10 @@ WC Live is a free, independent media player. It does not host, own, broadcast, s
 
 ## 📋 Changelog
 
+### v1.7.3 — 2026-07-02
+- Fixed in-app updates failing with "package appears to be invalid"
+- Update downloads are now verified byte-for-byte before installing
+
 ### v1.7.2 — 2026-07-02
 - Notifications now play sound, show the WC Live icon, and open the exact channel when tapped
 - The app asks for notification permission on first open
