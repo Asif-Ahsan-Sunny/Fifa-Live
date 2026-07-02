@@ -119,6 +119,10 @@ Available for self-hosting — see the `Web-Project/` folder in the development 
 
 ## 📋 Changelog
 
+### v1.7.1 — 2026-07-02
+- Fixed: viewer tracking now works automatically when on home network
+- Fixed: channel names now display correctly in admin viewer stats
+
 ### v1.7.0 — 2026-07-02
 - Live viewer count — see how many people are watching alongside you
 - Firebase push notifications — receive alerts from the broadcast team

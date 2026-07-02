@@ -1,18 +1,18 @@
 {
   "appName": "WC Live",
   "packageName": "com.wclive.tv",
-  "versionCode": 16,
-  "versionName": "1.7.0",
+  "versionCode": 17,
+  "versionName": "1.7.1",
   "minimumSupportedVersion": 1,
   "forceUpdate": false,
   "updateAvailable": true,
   "releaseDate": "2026-07-02",
   "apkSizeMB": 2.3,
-  "apkUrl": "https://raw.githubusercontent.com/Asif-Ahsan-Sunny/wc-live/main/updates/wc-live-v1.7.0.apk",
+  "apkUrl": "https://raw.githubusercontent.com/Asif-Ahsan-Sunny/wc-live/main/updates/wc-live-v1.7.1.apk",
   "releaseNotes": [
     "Live viewer count — see how many people are watching alongside you",
     "Firebase push notifications — receive alerts from the broadcast team",
     "Notification bell — in-app notification inbox for announcements",
-    "Background improvements and stability fixes"
+    "Fixed: viewer tracking now works automatically on home network"
   ]
 }
