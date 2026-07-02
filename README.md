@@ -117,7 +117,32 @@ Available for self-hosting — see the `Web-Project/` folder in the development 
 
 ---
 
+## 🔒 Privacy Policy
+
+WC Live does not require an account and does not collect personal information. The only data the app transmits is:
+
+- **Anonymous viewer counts** — a random session identifier and the channel being watched, used solely to display "currently watching" numbers. No identity, location, or device fingerprint is attached.
+- **Push notification tokens** — if you allow notifications, a Firebase Cloud Messaging token and basic device model information are stored so announcements can be delivered. Denying the permission disables this entirely.
+
+Nothing is sold, shared with third parties, or used for advertising.
+
+## 🛡 Security
+
+- Release APKs are signed with the WC Live release key; verify downloads against `SHA256SUMS.txt` in the release package.
+- The app requests only the minimal permissions it needs: network access, install-packages (for in-app updates), and optional notifications.
+- Sideloaded apps may show a Google Play Protect warning — this is standard for any app installed outside the Play Store. See the Play Protect guide in the release package.
+
+## ⚠️ Disclaimer
+
+WC Live is a free, independent media player. It does not host, own, broadcast, sell, or distribute any television channels or copyrighted material. All channel links are publicly available on the internet and sourced from third-party providers. WC Live has no control over, and accepts no responsibility for, the content, legality, or availability of any stream. By using WC Live you accept sole responsibility for ensuring your use complies with the laws of your country or region. If you are a rights holder with a copyright concern, please contact the stream provider directly — WC Live does not store or serve any media content.
+
 ## 📋 Changelog
+
+### v1.7.2 — 2026-07-02
+- Notifications now play sound, show the WC Live icon, and open the exact channel when tapped
+- The app asks for notification permission on first open
+- New Retry button when a stream fails to load
+- Fixed channels sharing a stream URL disappearing from the list
 
 ### v1.7.1 — 2026-07-02
 - Fixed: viewer tracking now works automatically when on home network
